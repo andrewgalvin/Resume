@@ -9,6 +9,7 @@ export default function Home() {
         display: "flex",
         justifyContent: "center",
       }}
+      id="about"
     >
       <div
         style={{

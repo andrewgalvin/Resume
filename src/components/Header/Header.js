@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <Box>
-      <AppBar position="sticky">
+      <AppBar position="fixed">
         <Toolbar style={{margin: 0}}>
           <Box
             style={{
