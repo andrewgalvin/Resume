@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 export default function Home() {
   return (
     <Box
-      style={{
+      sx={{
         height: "100vh",
         display: "flex",
         justifyContent: "center",
@@ -19,25 +19,25 @@ export default function Home() {
           flexDirection: "column",
         }}
       >
-        <Box style={{ padding: "24px 24px" }}>
+        <Box style={{ padding: "24px 24px", width: "100%" }}>
           <Typography
             variant="h3"
             component="div"
-            sx={{ color: "primary.light" }}
+            sx={{ color: "primary.dark" }}
           >
             Hello, my name is
           </Typography>
           <Typography
-            variant="h1"
+            variant="h2"
             component="div"
-            sx={{ color: "secondary.main" }}
+            sx={{ color: "primary.light" }}
           >
             Andrew Galvin
           </Typography>
           <Typography
             variant="subtitle1"
             component="div"
-            sx={{ color: "primary.dark" }}
+            sx={{ color: "primary.contrastText" }}
           >
             I'm an undergraduate student at Wentworth Institute of Technology{" "}
             <br />

@@ -3,10 +3,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import CssBaseline from '@mui/material/CssBaseline';
 
-import Header from "./Header";
+import Header from "./components/Header/Header";
 // import About from "./About";
-import Home from "./Home";
-import Experience from "./Experience";
+import Home from "./components/Home/Home";
+import Experience from "./components/Experience/Experience";
 import theme from "./Theme";
 
 function App() {

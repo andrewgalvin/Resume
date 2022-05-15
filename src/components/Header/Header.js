@@ -5,8 +5,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import { headerInfo, decToBinary } from "./constants";
-import resume from "./files/resume.pdf";
+import { headerInfo, decToBinary } from "../../constants";
+import resume from "../../files/resume.pdf";
 
 export default function Header() {
   const [state, setState] = useState({
@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <Box>
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar style={{margin: 0}}>
           <Box
             style={{
@@ -46,7 +46,7 @@ export default function Header() {
             {headerInfo.map((info, num) => {
               return (
                 <Box sx={{ m: 1 }}>
-                  <Button href={info.href} color="secondary">
+                  <Button href={info.href} color="secondary" sx={{color: "secondary.light", ":hover":{color: "secondary.dark"}}}>
                     {!state.mobileView
                       ? `0${decToBinary(num + 1)}. ${info.text}`
                       : `${info.text}`}
@@ -57,10 +57,15 @@ export default function Header() {
 
             <Box sx={{ m: 1 }}>
               <Button
+                color="secondary"
                 sx={{
                   border: 1,
-                  borderColor: "primary.light",
-                  color: "primary.light",
+                  borderColor: "secondary.dark",
+                  color: "secondary.dark",
+                  ":hover": {
+                    color: "secondary.light",
+                    borderColor: "secondary.light",
+                  }
                 }}
                 href={resume}
               >
