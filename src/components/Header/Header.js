@@ -45,7 +45,7 @@ export default function Header() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
             {headerInfo.map((info, num) => {
               return (
-                <Box sx={{ m: 1 }}>
+                <Box sx={{ m: 1 }} key={decToBinary(num+1)}>
                   <Button href={info.href} color="secondary" sx={{color: "secondary.light", ":hover":{color: "secondary.dark"}}}>
                     {!state.mobileView
                       ? `0${decToBinary(num + 1)}. ${info.text}`

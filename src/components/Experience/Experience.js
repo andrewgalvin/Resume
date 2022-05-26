@@ -58,6 +58,7 @@ export default function Experience() {
                       ? "2px solid #EC9A9A"
                       : "2px solid #F1FAEE",
                 }}
+                key={job.company}
               >
                 <Button
                   color="secondary"
@@ -85,7 +86,7 @@ export default function Experience() {
             .filter((job) => job.company === selectedJob)
             .map((job, num) => {
               return (
-                <Box>
+                <Box key={job.company}>
                   <Typography
                     variant="h5"
                     component="div"
@@ -128,6 +129,7 @@ export default function Experience() {
                             width: "1em",
                           },
                         }}
+                        key={desc}
                         component="div"
                       >
                         {desc}

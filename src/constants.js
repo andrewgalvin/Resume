@@ -1,3 +1,11 @@
+import nokinysToolbox from "./files/projects/nokinystoolbox.png"
+import connect4 from "./files/projects/connect4.png"
+import discordticket from "./files/projects/discordtickettool.png"
+import fooji from "./files/projects/fooji.png"
+import supremetool from "./files/projects/supremetool.gif"
+import sneakerprofilemanager from "./files/projects/sneakerprofilemanager.png"
+import sneakerbotcheckoutlogs from "./files/projects/sneakerbotcheckoutlogs.png"
+
 const headerInfo = [
   {
     text: "About",
@@ -64,99 +72,99 @@ const projectInfo = [
   {
     projectTitle: "Connect 4",
     projectLanguage: "Java",
-    projectImg: "/files/projects/connect4.png",
+    projectImg: connect4,
     projectDescription: "Connect 4 Using JavaFX and Scenebuilder",
-    gitHubLink: "https://github.com/andrewgalvin/Connect4",
+    githubLink: "https://github.com/andrewgalvin/Connect4",
     websiteLink: null,
     yearCreated: "2019",
   },
   {
     projectTitle: "Fooji Twitter Monitor",
     projectLanguage: "Python",
-    projectImg: "/files/projects/fooji.png",
+    projectImg: fooji,
     projectDescription:
       "Monitors tweets for Fooji giveaways with a one-click link to Tweet to enter",
-    gitHubLink: null,
+    githubLink: null,
     websiteLink: null,
     yearCreated: "2020",
   },
   {
     projectTitle: "Supreme Tool",
     projectLanguage: "Python",
-    projectImg: "/files/projects/supremetool.gif",
+    projectImg: supremetool,
     projectDescription:
       "Supreme tool with authentication API to add items to cart in milliseconds",
-    gitHubLink: "https://github.com/andrewgalvin/UnnamedSupremeBot",
+    githubLink: "https://github.com/andrewgalvin/UnnamedSupremeBot",
     websiteLink: null,
     yearCreated: "2020",
   },
   {
     projectTitle: "Sneaker Profile Manager",
     projectLanguage: "Python",
-    projectImg: "/files/projects/sneakerprofilemanager.png",
+    projectImg: sneakerprofilemanager,
     projectDescription:
       "Discord bot to create and convert profiles for most sneaker bots",
-    gitHubLink: null,
+    githubLink: null,
     websiteLink: null,
     yearCreated: "2020",
   },
   {
     projectTitle: "Discord Ticket Tool",
     projectLanguage: "Python",
-    projectImg: "/files/projects/discordtickettool.png",
+    projectImg: discordticket,
     projectDescription:
       "Decision tree automated ticket tool with automated ticket logging to Google Sheets",
-    gitHubLink: null,
+    githubLink: null,
     websiteLink: null,
     yearCreated: "2020",
   },
   {
     projectTitle: "Sneaker Bot Checkout Logs",
     projectLanguage: "ReactJS",
-    projectImg: "/files/projects/sneakerbotcheckoutlogs.png",
+    projectImg: sneakerbotcheckoutlogs,
     projectDescription:
       "Website to monitor checkout logs and specific Shopify site's bot protection status",
-    gitHubLink: null,
+    githubLink: null,
     websiteLink: null,
     yearCreated: "2021",
   },
   {
     projectTitle: "SCP Automated",
     projectLanguage: "Python",
-    projectImg: null,
+    projectImg: nokinysToolbox,
     projectDescription:
       "Automatically monitor file for changes and if a change occurs, send it to my school's super computer",
-    gitHubLink: "https://github.com/andrewgalvin/scp-automated",
+    githubLink: "https://github.com/andrewgalvin/scp-automated",
     websiteLink: null,
     yearCreated: "2021",
   },
   {
     projectTitle: "Twitter Web Scraper",
     projectLanguage: "Python",
-    projectImg: null,
+    projectImg: nokinysToolbox,
     projectDescription:
       "Script to scrape tweets from Twitter given a query without the help of other libraries such as Tweepy",
-    gitHubLink: "https://github.com/andrewgalvin/twitter-scraper",
+    githubLink: "https://github.com/andrewgalvin/twitter-scraper",
     websiteLink: null,
     yearCreated: "2021",
   },
   {
     projectTitle: "BTC vs Twitter Data",
     projectLanguage: "Python / PySpark",
-    projectImg: null,
+    projectImg: nokinysToolbox,
     projectDescription:
       "Bitcoin price comparison in relation to the sentiment analysis of Tweets which contain the word BTC",
-    gitHubLink: "https://github.com/andrewgalvin/BTC-vs-Twitter",
+    githubLink: "https://github.com/andrewgalvin/BTC-vs-Twitter",
     websiteLink: null,
     yearCreated: "2021",
   },
   {
     projectTitle: "Nokiny's Toolbox",
     projectLanguage: "MongoDB / ExpressJS / ReactJS / NodeJS",
-    projectImg: "/files/projects/nokinystoolbox.png",
+    projectImg: nokinysToolbox,
     projectDescription:
       "Full stack website with a SAAS model to track your inventory and expenses in addition to monitoring your email for new orders",
-    gitHubLink: null,
+    githubLink: null,
     websiteLink: "https://www.nokinystoolbox.com/",
     yearCreated: "2021",
   },

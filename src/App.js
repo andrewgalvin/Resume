@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 // import About from "./About";
 import Home from "./components/Home/Home";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 import theme from "./Theme";
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
         </Box>
         <Box sx={{ bgcolor: "primary.main" }}>
           <Experience />
+        </Box>
+        <Box sx={{ bgcolor: "primary.main" }}>
+          <Projects />
         </Box>
     </ThemeProvider>
   );
