@@ -55,10 +55,10 @@ export default function Projects() {
           padding: "24px 24px",
         }}
       >
-        {projectInfo.slice(0).reverse().slice(0, projectNum).map((project) => {
+        {projectInfo.slice(0).reverse().slice(0, projectNum).map((project, num) => {
           return (
-            <Box key={project.projectTitle}>
-              <Project project={project} />
+            <Box sx={{width: "80vw"}} key={project.projectTitle}>
+              <Project project={project} num={num} />
             </Box>
           );
         })}

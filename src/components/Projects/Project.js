@@ -7,7 +7,7 @@ export default function Project(props) {
       style={{
         width: "95%",
         position: "relative",
-        maxWidth: "600px",
+        maxWidth: "800px",
         margin: "24px auto",
         background: "#457B9D",
         boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
@@ -35,6 +35,8 @@ export default function Project(props) {
         "@media screen and (maxWidth: 1280px)": {
           flexDirection: "column",
         },
+        marginLeft: props.num % 2 === 0 ? "0" : "auto",
+        marginRight: props.num % 2 === 0 ? "auto" : "0"
       }}
     >
       <Box
