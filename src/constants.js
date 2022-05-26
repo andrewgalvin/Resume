@@ -1,10 +1,10 @@
-import nokinysToolbox from "./files/projects/nokinystoolbox.png"
-import connect4 from "./files/projects/connect4.png"
-import discordticket from "./files/projects/discordtickettool.png"
-import fooji from "./files/projects/fooji.png"
-import supremetool from "./files/projects/supremetool.gif"
-import sneakerprofilemanager from "./files/projects/sneakerprofilemanager.png"
-import sneakerbotcheckoutlogs from "./files/projects/sneakerbotcheckoutlogs.png"
+import nokinysToolbox from "./files/projects/nokinystoolbox.png";
+import connect4 from "./files/projects/connect4.png";
+import discordticket from "./files/projects/discordtickettool.png";
+import fooji from "./files/projects/fooji.png";
+import supremetool from "./files/projects/supremetool.gif";
+import sneakerprofilemanager from "./files/projects/sneakerprofilemanager.png";
+import sneakerbotcheckoutlogs from "./files/projects/sneakerbotcheckoutlogs.png";
 
 const headerInfo = [
   {
@@ -21,7 +21,7 @@ const headerInfo = [
   },
   {
     text: "Contact",
-    href: "#contact",
+    href: "mailto:andrewggalvin@gmail.com",
   },
 ];
 
@@ -119,7 +119,7 @@ const projectInfo = [
     yearCreated: "2020",
   },
   {
-    projectTitle: "Sneaker Bot Checkout Logs",
+    projectTitle: "Sneaker Bot Checkout Logs / Python",
     projectLanguage: "ReactJS",
     projectImg: sneakerbotcheckoutlogs,
     projectDescription:
@@ -131,7 +131,8 @@ const projectInfo = [
   {
     projectTitle: "SCP Automated",
     projectLanguage: "Python",
-    projectImg: nokinysToolbox,
+    projectImg:
+      "https://static.haydenjames.io/wp-content/uploads/2020/04/scp_screenshot.png",
     projectDescription:
       "Automatically monitor file for changes and if a change occurs, send it to my school's super computer",
     githubLink: "https://github.com/andrewgalvin/scp-automated",
@@ -141,7 +142,8 @@ const projectInfo = [
   {
     projectTitle: "Twitter Web Scraper",
     projectLanguage: "Python",
-    projectImg: nokinysToolbox,
+    projectImg:
+      "https://help.twitter.com/content/dam/help-twitter/brand/logo.png",
     projectDescription:
       "Script to scrape tweets from Twitter given a query without the help of other libraries such as Tweepy",
     githubLink: "https://github.com/andrewgalvin/twitter-scraper",
@@ -151,7 +153,7 @@ const projectInfo = [
   {
     projectTitle: "BTC vs Twitter Data",
     projectLanguage: "Python / PySpark",
-    projectImg: nokinysToolbox,
+    projectImg: "https://bitcoin.org/img/icons/opengraph.png?1652976465",
     projectDescription:
       "Bitcoin price comparison in relation to the sentiment analysis of Tweets which contain the word BTC",
     githubLink: "https://github.com/andrewgalvin/BTC-vs-Twitter",

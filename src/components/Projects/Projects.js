@@ -1,27 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
 import Project from "./Project";
 import { projectInfo } from "../../constants";
 
 export default function Projects() {
   const [projectNum, setProjectNum] = useState(2);
+  const firstRender = useRef(true);
 
   const handleViewMoreProjects = (e) => {
     e.preventDefault();
-    setProjectNum(projectNum + 2);
-  };
-
-  const handleViewLessProjects = (e) => {
-    e.preventDefault();
-    if (projectNum === 2) {
+    if (projectNum === projectInfo.length) {
       setProjectNum(2);
     } else {
-      setProjectNum(projectNum - 2);
+      setProjectNum(projectNum + 2);
     }
   };
+
+  useEffect(() => {
+    if (!firstRender.current) {
+      var element = document.getElementById(`scroll-to`);
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest",
+      });
+    } else {
+      firstRender.current = false;
+    }
+  }, [projectNum]);
+
   return (
     <Box
       id="projects"
@@ -55,13 +68,21 @@ export default function Projects() {
           padding: "24px 24px",
         }}
       >
-        {projectInfo.slice(0).reverse().slice(0, projectNum).map((project, num) => {
-          return (
-            <Box sx={{width: "80vw"}} key={project.projectTitle}>
-              <Project project={project} num={num} />
-            </Box>
-          );
-        })}
+        {projectInfo
+          .slice(0)
+          .reverse()
+          .slice(0, projectNum)
+          .map((project, num) => {
+            return (
+              <Box
+                sx={{ width: "80vw" }}
+                key={project.projectTitle}
+                id={`project-${num}`}
+              >
+                <Project project={project} num={num} />
+              </Box>
+            );
+          })}
         <Box
           sx={{
             display: "flex",
@@ -71,47 +92,19 @@ export default function Projects() {
             justifyContent: "space-evenly",
           }}
         >
-          <Button
-            style={{
-              border: "2px solid #A8DADC",
-              borderRadius: "50px",
-              padding: "10px 15px",
-              color: "#FFF",
-              boxShadow: "0px 7px 20px #1D3557",
-              textDecoration: "none",
-              minWidth: "100px",
-              fontWeight: "500",
-              "&:hover": {
-                backgroundColor: "#A8DADC",
-                color: "white",
-              },
-
-            }}
-            variant="outlined"
-            onClick={handleViewLessProjects}
-          >
-            View Less
-          </Button>
-          <Button
-            style={{
-              border: "2px solid #A8DADC",
-              borderRadius: "50px",
-              padding: "10px 15px",
-              color: "#FFF",
-              boxShadow: "0px 7px 20px #1D3557",
-              textDecoration: "none",
-              minWidth: "100px",
-              fontWeight: "500",
-              "&:hover": {
-                backgroundColor: "#A8DADC",
-                color: "white",
-              },
-            }}
-            variant="outlined"
+          <IconButton
+            aria-label="delete"
+            size="large"
+            sx={{ color: "secondary.main", border: "2px solid #E63946" }}
             onClick={handleViewMoreProjects}
+            id="scroll-to"
           >
-            View More
-          </Button>
+            {projectNum === projectInfo.length ? (
+              <ExpandLessIcon fontSize="inherit" />
+            ) : (
+              <ExpandMoreIcon fontSize="inherit" />
+            )}
+          </IconButton>
         </Box>
       </Box>
     </Box>

@@ -3,68 +3,73 @@ import { Box, Typography, Button } from "@mui/material";
 
 export default function Project(props) {
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         width: "95%",
         position: "relative",
-        maxWidth: "800px",
+        maxWidth: "1000px",
         margin: "24px auto",
-        background: "#457B9D",
+        backgroundColor: "#457B9D",
         boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
         padding: "25px",
         borderRadius: "25px",
         height: "400px",
         transition: "all .3s",
-        "@media (maxWidth: 950px)": {
+        "@media (max-width: 950px)": {
           maxWidth: "575px",
-          height: "450px",
+          height: "425px",
         },
-        "@media (maxWidth: 1280px)": {
+        "@media (max-width: 1280px)": {
           minHeight: "500px",
           height: "auto",
           marginBottom: "40px",
           marginTop: "120px",
         },
-        "@media (maxHeight: 500px) and (minWidth: 950px)": {
+        "@media (max-height: 500px) and (min-width: 950px)": {
           height: "350px",
           margin: "200px",
         },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        "@media screen and (maxWidth: 1280px)": {
+        "@media screen and (max-width: 1280px)": {
           flexDirection: "column",
+          marginLeft: "auto",
+          marginRight: "auto",
         },
         marginLeft: props.num % 2 === 0 ? "0" : "auto",
-        marginRight: props.num % 2 === 0 ? "auto" : "0"
+        marginRight: props.num % 2 === 0 ? "auto" : "0",
+        "& > *": {
+          transition: "all 0.4s",
+        },
+        top: "0",
+        ":hover": {
+          top: "-15px",
+        },
       }}
+      xs={10}
     >
       <Box
         sx={{
           position: "relative",
-          top: "0",
-          ":hover": {
-            top: "-10px",
-          },
           width: "300px",
           flexShrink: 0,
           height: "300px",
-          backgroundImage:
-            "linear-gradient(147deg, var(--light-background) 0%, var(--dark-background) 74%)",
+          backgroundImage: "linear-gradient(147deg, #457B9D 0%, #A8DADC 74%)",
           boxShadow: "4px 13px 30px 1px #333",
           borderRadius: "20px",
-          transform: "translateX(-80px)",
+          transform: "translateX(-150px)",
           overflow: "hidden",
-          "@media (maxWidth: 1575px)": {
+          "@media (max-width: 1575px)": {
             transform: "translateX(-20px)",
           },
-          "@media (maxWidth: 1280px)": {
+          "@media (max-width: 1280px)": {
             transform: "translateX(-80px)",
             // eslint-disable-next-line
-            transform: "translateY(-50%)",
+            transform: "translateY(-20%)",
             width: "90%",
           },
-          "@media (maxHeight: 500px) and (minWidth: 992px)": {
+          "@media (max-height: 500px) and (min-width: 992px)": {
             height: "270px",
           },
         }}
@@ -91,7 +96,7 @@ export default function Project(props) {
           paddingRight: "25px",
           color: "#FFF",
           "@media (maxWidth: 1280px)": {
-            marginTop: "-125px",
+            marginTop: "125px",
             padding: "0 30px",
           },
           "& > *": {
@@ -103,7 +108,7 @@ export default function Project(props) {
           style={{ marginBottom: "15px", display: "block", fontWeight: 500 }}
           variant="subtitle1"
         >
-          {props.project.projectTitle}
+          {props.project.projectLanguage}
         </Typography>
         <Typography
           variant="h5"
@@ -114,7 +119,7 @@ export default function Project(props) {
             wordWrap: "break-word",
           }}
         >
-          {props.project.language}
+          {props.project.projectTitle}
         </Typography>
         <Typography style={{ marginBottom: "30px", textAlign: "center" }}>
           {props.project.projectDescription} <br /> <br />
@@ -165,6 +170,6 @@ export default function Project(props) {
           </Button>
         )}
       </Box>
-    </div>
+    </Box>
   );
 }
