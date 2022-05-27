@@ -22,7 +22,7 @@ export default function Experience() {
         alignItems: "center",
         flexDirection: "column",
         width: "100%",
-        padding: "100px 100px",
+        padding: "20px 20px",
       }}
     >
       <Typography
