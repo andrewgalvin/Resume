@@ -42,8 +42,8 @@ export default function Home() {
           >
             I'm an undergraduate student at Wentworth Institute of Technology{" "}
             <br />
-            pursing my bachelor's degree in CS and master's degree in Applied
-            Computer <br />
+            pursuing my Bachelor's degree in Computer Science and Master's
+            degree in Applied Computer <br />
             Science in Artificial Intelligence & Machine Learning.
           </Typography>
         </Box>
