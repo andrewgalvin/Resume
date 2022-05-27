@@ -52,7 +52,7 @@ export default function Header() {
                       }}
                     >
                       {!state.mobileView
-                        ? `0${decToBinary(num + 1)}. ${info.text}`
+                        ? `${decToBinary(num + 1)}. ${info.text}`
                         : `${info.text}`}
                     </Button>
                   </Box>

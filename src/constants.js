@@ -30,7 +30,11 @@ const experienceInfo = [
     jobTitle: "Photographer",
     company: "Andrew Galvin Photography",
     location: "Weymouth, MA",
-    jobDescription: ["Specialize in senior and professional portraits"],
+    jobDescription: [
+      "Specialize in senior and professional portraits",
+      "Implement lighting, model posing, and photo editing ensuring customer satisfaction",
+      "Research modern photo retouching, photo manipulation, and color correction to ensure best results",
+    ],
     durationWorked: "Aug 2016 - Present",
   },
   {
@@ -38,7 +42,9 @@ const experienceInfo = [
     company: "Bay State Physical Therapy",
     location: "Braintree, MA",
     jobDescription: [
+      "Supported 700 employees via support requests and remote control software",
       "Researched and implemented new software to improve customer support",
+      "Researched modern automation technologies and provided training to staff across multiple departments to increase cross-department productivity by 20%",
     ],
     durationWorked: "Jan 2021 - May 2022",
   },
@@ -48,7 +54,9 @@ const experienceInfo = [
     company: "Home Sense",
     location: "Braintree, MA",
     jobDescription: [
-      "Key contributor to the successful opening of a new store",
+      "Organized merchandise to create positive customer reactions",
+      "Assisted an average of 300 customers per day in finding or selecting items",
+      "Provided outstanding customer service, receiving praise from numerous customers",
     ],
     durationWorked: "May 2018 - Jan 2021",
   },
@@ -56,14 +64,20 @@ const experienceInfo = [
     jobTitle: "Summer Intern: Referrals Department",
     company: "Harbor Health Services",
     location: "Brockton, MA",
-    jobDescription: ["Assisted patients with obtaining medical referrals"],
+    jobDescription: [
+      "Assisted an average of 100 patients per week with obtaining medical referrals",
+      "Collated all important patient information from referring physician offices",
+    ],
     durationWorked: "May 2019 - Aug 2019",
   },
   {
     jobTitle: "Prep Cook",
     company: "Olympic Pizza",
     location: "Weymouth, MA",
-    jobDescription: ["Prepared food vital for day to day business"],
+    jobDescription: [
+      "Prepared and portioned food for day to day business",
+      "Maintained clean work space and ensured cleanliness of equipment",
+    ],
     durationWorked: "Jun 2016 - Sept 2018",
   },
 ];
