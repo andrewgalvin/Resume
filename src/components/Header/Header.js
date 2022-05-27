@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 
 import { headerInfo, decToBinary } from "../../constants";
 import MobileSidebar from "./MobileSidebar";
@@ -41,7 +38,7 @@ export default function Header() {
           <Box>
             <Toolbar style={{ margin: 0 }}>
               <Box component="div" sx={{ flexGrow: 1 }}>
-                <img height="32px" width="32px" src={logo} />
+                <img height="32px" width="32px" src={logo} alt="logo" />
               </Box>
               {headerInfo.map((info, num) => {
                 return (
@@ -82,15 +79,7 @@ export default function Header() {
             </Toolbar>
           </Box>
         ) : (
-          <MobileSidebar
-            setState={setState}
-            drawerOpen={state.drawerOpen}
-            toolboxLogo={
-              <Box component="div" sx={{ flexGrow: 1 }}>
-                <img height="32px" width="32px" src={logo} />
-              </Box>
-            }
-          />
+          <MobileSidebar setState={setState} drawerOpen={state.drawerOpen} />
         )}
       </AppBar>
     </header>

@@ -1,13 +1,4 @@
-import {
-  Toolbar,
-  IconButton,
-  Drawer,
-  Link,
-  Menu,
-  MenuItem,
-  Button,
-  Box,
-} from "@mui/material";
+import { Toolbar, IconButton, Drawer, Button, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { headerInfo, decToBinary } from "../../constants";
 import logo from "../../files/avatar.png";
@@ -64,7 +55,7 @@ export default function MobileSidebar(props) {
               m: 2,
             }}
           >
-            <img height="32px" width="32px" src={logo} />
+            <img height="32px" width="32px" src={logo} alt="logo" />
           </Box>
           {headerInfo.map((info, num) => {
             return (
