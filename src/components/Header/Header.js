@@ -79,7 +79,15 @@ export default function Header() {
             </Toolbar>
           </Box>
         ) : (
-          <MobileSidebar setState={setState} drawerOpen={state.drawerOpen} />
+          <MobileSidebar
+            setState={setState}
+            drawerOpen={state.drawerOpen}
+            toolboxLogo={
+              <Box component="div" sx={{ flexGrow: 1 }}>
+                <img height="32px" width="32px" src={logo} alt="logo" />
+              </Box>
+            }
+          />
         )}
       </AppBar>
     </header>
