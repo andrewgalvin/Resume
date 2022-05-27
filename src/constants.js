@@ -119,8 +119,8 @@ const projectInfo = [
     yearCreated: "2020",
   },
   {
-    projectTitle: "Sneaker Bot Checkout Logs / Python",
-    projectLanguage: "ReactJS",
+    projectTitle: "Sneaker Bot Checkout Logs",
+    projectLanguage: "ReactJS / Python",
     projectImg: sneakerbotcheckoutlogs,
     projectDescription:
       "Website to monitor checkout logs and specific Shopify site's bot protection status",
