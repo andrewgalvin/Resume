@@ -38,7 +38,7 @@ export default function Header() {
           <Box>
             <Toolbar style={{ margin: 0 }}>
               <Box component="div" sx={{ flexGrow: 1 }}>
-                <img height="32px" width="32px" src={logo} alt="logo" />
+                {/* <img height="32px" width="32px" src={logo} alt="logo" /> */}
               </Box>
               {headerInfo.map((info, num) => {
                 return (

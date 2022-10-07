@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import logo from "../../files/avatar.png";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         }}
       >
         <Box style={{ padding: "24px 24px", width: "100%" }}>
+          <img height="160px" width="160px" src={logo} alt="logo" />
+
           <Typography
             variant="h3"
             component="div"
